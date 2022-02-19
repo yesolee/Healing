@@ -1,4 +1,5 @@
 body {
+  margin: 0;
 }
 
 html {
@@ -19,11 +20,9 @@ a {
   color: #f57f17;
 }
 
-.logo {
-}
-
 .logo a {
   color: black;
+  font-size: 45px;
 }
 
 .menu {
@@ -37,6 +36,32 @@ a {
   padding: 8px 12px;
 }
 
+.search_bar {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  width: 220px;
+  height: 38px;
+  border: 0;
+  border-radius: 15px;
+  font-size: 17px;
+  background-color: white;
+}
+
+.search_bar li {
+  padding: 8px 4px;
+}
+
+.search_bar input {
+  width: 180px;
+  padding-left: 20px;
+  font-size: 17px;
+  border: 0;
+}
+
+.search_bar i {
+  padding: 6px 6px 10px 0px;
+}
 .login {
   list-style: none;
   display: flex;
@@ -63,11 +88,12 @@ a {
   display: none;
   position: absolute;
   right: 32px;
+  top: 26px;
   font-size: 24px;
   color: black;
 }
 
-@media screen and (max-width: 831px) {
+@media screen and (max-width: 977px) {
   .nav_bar {
     flex-direction: column;
     align-items: flex-start;
@@ -90,6 +116,10 @@ a {
     display: none;
     justify-content: center;
     width: 100%;
+  }
+  .search_bar {
+    width: 100%;
+    justify-content: center;
   }
 
   .nav_togle {
